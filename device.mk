@@ -83,13 +83,17 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-custom
+    $(LOCAL_PATH)/overlay-yaap
 
 # Overlay-RRO
 PRODUCT_PACKAGES += \
     SweetinproSettingsProvider \
     SweetinproWifiOverlay \
     SweetWifiOverlay
+
+# Platform
+MSMSTEPPE := sm6150
+TARGET_BOARD_PLATFORM := $(MSMSTEPPE)
 
 # Power
 PRODUCT_COPY_FILES += \
