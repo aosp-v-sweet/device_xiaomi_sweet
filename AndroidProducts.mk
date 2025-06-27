@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelage_sweet.mk
+    $(LOCAL_DIR)/yaap_sweet.mk

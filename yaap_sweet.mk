@@ -13,19 +13,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/sweet/device.mk)
 
 # Inherit some common Pixelage stuff.
-$(call inherit-product, vendor/pixelage/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_SCREEN_HEIGHT := 2400
 TARGET_SCREEN_WIDTH := 1080
 
-# Pixelage
-PIXELAGE_BUILDTYPE := OFFICIAL
-PIXELAGE_MAINTAINER := Zohaib
-TARGET_FACE_UNLOCK_SUPPORTED := true
+# Exclude QCOM powerhal manifest
+TARGET_PROVIDES_POWERHAL := true
 
-PRODUCT_NAME := pixelage_sweet
+PRODUCT_NAME := yaap_sweet
 PRODUCT_DEVICE := sweet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 10 Pro
